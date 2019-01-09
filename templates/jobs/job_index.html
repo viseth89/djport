@@ -1,7 +1,58 @@
-<h1>Job Index</h1>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} | Welcome to Blogs {% endblock %}
+{% block content %}
 
-{% for jobs in job.all %}
-<img src=" {{ jobs.image.url }} " alt="">
-<p>{{ jobs.summary }}  </p>
-<p> {{ jobs.description }} </p>
-{% endfor %}
+
+
+
+<div class="container-wrap">
+		<aside id="fh5co-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url({% static 'images/img_bg_3.jpg' %});">
+			   		<div class="overlay-gradient"></div>
+		   			<div class="row">
+			   			<div class="col-md-6 col-md-offset-3 slider-text slider-text-bg">
+			   				<div class="slider-text-inner text-center">
+			   					<h1>Work</h1>
+									<h2>Free html5 templates Available at <a href="http://themewagon.com/" target="_blank">Themewagon</a></h2>
+			   				</div>
+			   			</div>
+			   		</div>
+			   	</li>		   	
+			  	</ul>
+		  	</div>
+		</aside>		
+		<div id="fh5co-work">
+			<div class="row">
+				<div class="col-md-4 text-center animate-box">
+					<a href="work-single.html" class="work" style="background-image: url(images/portfolio-1.jpg);">
+						<div class="desc">
+							<h3>Project Name</h3>
+							<span>Illustration</span>
+						</div>
+					</a>
+				</div>
+                
+                {% for jobs in job.all %}
+                <div class="col-md-4 text-center animate-box">
+                    <a href="work-single.html" class="work" style="background-image: url({{ jobs.image.url }});">
+                        <div class="desc">
+                            <h3>{{ jobs.summary }}</h3>
+                            <span>Illustration</span>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+
+			</div>
+		</div>
+	</div><!-- END container-wrap -->
+
+
+
+
+{% endblock %}
+
+

@@ -1,6 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} | Welcome to Blogs {% endblock %}
+{% block content %}
+
 <h1>Job Detail</h1>
 
 
 <img src=" {{ job.image.url }} " alt="">
 <p>{{ job.summary }}  </p>
 <p> {{ job.description }} </p>
+
+
+
+{% endblock %}
+
+
