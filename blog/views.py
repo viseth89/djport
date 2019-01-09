@@ -11,4 +11,4 @@ def blogDetail(request, blog_id):
     context = {
         'blog':blog
     }
-    return render(request, 'pages/blog_detail.html', context)
+    return render(request, 'blog/blog_detail.html', context)
