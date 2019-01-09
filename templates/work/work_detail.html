@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} | Welcome to Work Details {% endblock %}
+{% block content %}
+
+<h1>Work Detail</h1>
+
+
+<img src=" {{ work.image.url }} " alt="">
+<p>{{ work.summary }}  </p>
+<p> {{ work.description }} </p>
+
+
+
+{% endblock %}
+
+
