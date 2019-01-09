@@ -124,7 +124,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'btre/static')
+    os.path.join(BASE_DIR, 'portfolio_project/static')
 ]
 
 # Media Folder Settings
