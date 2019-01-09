@@ -3,9 +3,6 @@
 {% block title %} | Welcome to Blogs {% endblock %}
 {% block content %}
 
-
-
-
 <div class="container-wrap">
 		<aside id="fh5co-hero">
 			<div class="flexslider">
@@ -27,7 +24,7 @@
 		<div id="fh5co-work">
 			<div class="row">
                 
-                {% for works in work.all %}
+                <!-- {% for works in work.all %}
                 <div class="col-md-4 text-center animate-box">
                     <a href="work-single.html" class="work" style="background-image: url({{ works.image.url }});">
                         <div class="desc">
@@ -36,14 +33,22 @@
                         </div>
                     </a>
                 </div>
-                {% endfor %}
+                {% endfor %} -->
+
+				{%for works in work.all %}
+					<div class="col-md-4 text-center animate-box">
+						<a href="work-single.html" class="work" style="background-image: url({{ works.image.url }}); background-size: contain;">
+							<div class="desc">
+								<h3>{{ works.summary }}</h3>
+								<span>Illustration</span>
+							</div>
+						</a>
+					</div>
+					{% endfor %}
 
 			</div>
 		</div>
 	</div><!-- END container-wrap -->
-
-
-
 
 {% endblock %}
 
