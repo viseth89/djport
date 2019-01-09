@@ -1,0 +1,7 @@
+<h1>Job Index</h1>
+
+{% for jobs in job.all %}
+<img src=" {{ jobs.image.url }} " alt="">
+<p>{{ jobs.summary }}  </p>
+<p> {{ jobs.description }} </p>
+{% endfor %}
