@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} | Welcome to Blogs {% endblock %}
+{% block content %}
+
+<div class="container-wrap">
+		<aside id="fh5co-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url({% static 'images/img_bg_3.jpg' %});">
+			   		<div class="overlay-gradient"></div>
+		   			<div class="row">
+			   			<div class="col-md-6 col-md-offset-3 slider-text slider-text-bg">
+			   				<div class="slider-text-inner text-center">
+			   					<h1>Work</h1>
+									<h2>Free html5 templates Available at <a href="http://themewagon.com/" target="_blank">Themewagon</a></h2>
+			   				</div>
+			   			</div>
+			   		</div>
+			   	</li>		   	
+			  	</ul>
+		  	</div>
+		</aside>		
+		<div id="fh5co-work">
+			<div class="row">
+                
+                <!-- {% for works in work.all %}
+                <div class="col-md-4 text-center animate-box">
+                    <a href="work-single.html" class="work" style="background-image: url({{ works.image.url }});">
+                        <div class="desc">
+                            <h3>{{ works.summary }}</h3>
+                            <span>Illustration</span>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %} -->
+
+				{%for works in work.all %}
+					<div class="col-md-4 text-center animate-box">
+						<a href="work-single.html" class="work" style="background-image: url({{ works.image.url }}); background-size: contain;">
+							<div class="desc">
+								<h3>{{ works.summary }}</h3>
+								<span>Illustration</span>
+							</div>
+						</a>
+					</div>
+					{% endfor %}
+
+			</div>
+		</div>
+	</div><!-- END container-wrap -->
+
+{% endblock %}
+
+
