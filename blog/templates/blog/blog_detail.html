@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %} | Welcome {% endblock %}
+{% block content %}
+
+<div class="container">
+    <h1>Blog Detail</h1>
+
+
+    <p>{{ blog.title }}</p>  
+    <p>{{ blog.pub_date }}</p>  
+    <p>{{ blog.body }}</p>  
+    <img src="{{ blog.image.url }}" alt="">
+</div>
+
+
+{% for blog in blogs.all %}
+<p>{{ blog.title }}</p>  
+<p>{{ blog.pub_date }}</p>  
+<p>{{ blog.body }}</p>  
+<img src="{{ blog.image.url }}" alt="">
+
+{% endfor %}
+
+{% endblock %}
+
+
