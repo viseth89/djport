@@ -5,7 +5,6 @@ from .models import Work
 
 def workIndex(request):
     work = Work.objects
-
     return render(request, 'work/work_index.html', {'work':work})
 
 def workDetail(request, work_id):
@@ -14,4 +13,3 @@ def workDetail(request, work_id):
         'work':work
     }
     return render(request, 'work/work_detail.html', context)
-

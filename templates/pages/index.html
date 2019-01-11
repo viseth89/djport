@@ -1,53 +1,54 @@
 {% extends 'base.html' %}
 {% block title %} | Welcome {% endblock %}
+{% load static %}
 {% block content %}
 <div class="container-wrap">
 		<aside id="fh5co-hero">
 			<div class="flexslider">
 				<ul class="slides">
-			   	<li style="background-image: url(images/img_bg_1.jpg);">
+			   	<li style="background-image: url({% static 'images/img_bg_1.jpg' %});">
 			   		<div class="overlay-gradient"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
 				   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 slider-text">
 				   				<div class="slider-text-inner">
-				   					<h1>Not Every Project Needs To Be Perfect</h1>
-										<h2>Free html5 templates Available at <a href="http://Themewagon.com/theme_tag/free/" target="_blank">Themewagon</a></h2>
-										<p><a class="btn btn-primary btn-demo" href="#"></i> View Demo</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
+				   					<h1>Pursueing Perfection</h1>
+										<!-- <h2>Free html5 templates Available at <a href="http://Themewagon.com/theme_tag/free/" target="_blank">Themewagon</a></h2>
+										<p><a class="btn btn-primary btn-demo" href="#"></i> View Demo</a> <a class="btn btn-primary btn-learn">Learn More</a></p> -->
 				   				</div>
 				   			</div>
 				   		</div>
 			   		</div>
 			   	</li>
-			   	<li style="background-image: url(images/img_bg_2.jpg);">
+			   	<li style="background-image: url({% static 'images/img_bg_2.jpg' %});">
 			   		<div class="overlay-gradient"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
 				   			<div class="col-md-6 col-md-offset-3 col-md-push-3 slider-text">
 				   				<div class="slider-text-inner">
-				   					<h1>WordPress Theme For People Who Tell Stories</h1>
-										<h2>Free html5 templates Available at <a href="http://Themewagon.com/theme_tag/free/" target="_blank">Themewagon</a></h2>
-										<p><a class="btn btn-primary btn-demo" href="#"></i> View Demo</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
+				   					<h1>Through Discipline</h1>
+										<!-- <h2>Free html5 templates Available at <a href="http://Themewagon.com/theme_tag/free/" target="_blank">Themewagon</a></h2>
+										<p><a class="btn btn-primary btn-demo" href="#"></i> View Demo</a> <a class="btn btn-primary btn-learn">Learn More</a></p> -->
 				   				</div>
 				   			</div>
 				   		</div>
 			   		</div>
 			   	</li>
-			   	<li style="background-image: url(images/img_bg_3.jpg);">
+			   	<li style="background-image: url({% static 'images/img_bg_3.jpg' %});">
 			   		<div class="overlay-gradient"></div>
 			   		<div class="container-fluids">
 			   			<div class="row">
 				   			<div class="col-md-6 col-md-offset-3 slider-text">
 				   				<div class="slider-text-inner text-center">
-				   					<h1>What Would You Like To Learn?</h1>
-										<h2>Free html5 templates Available at <a href="http://Themewagon.com/theme_tag/free/" target="_blank">Themewagon</a></h2>
-										<p><a class="btn btn-primary btn-demo" href="#"></i> View Demo</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
+				   					<h1>Our Dreams Come True</h1>
+										<!-- <h2>Free html5 templates Available at <a href="http://Themewagon.com/theme_tag/free/" target="_blank">Themewagon</a></h2>
+										<p><a class="btn btn-primary btn-demo" href="#"></i> View Demo</a> <a class="btn btn-primary btn-learn">Learn More</a></p> -->
 				   				</div>
 				   			</div>
 				   		</div>
 			   		</div>
 			   	</li>
-			   	<li style="background-image: url(images/img_bg_4.jpg);">
+			   	<!-- <li style="background-image: url(images/img_bg_4.jpg);">
 			   		<div class="overlay-gradient"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
@@ -60,7 +61,7 @@
 				   			</div>
 				   		</div>
 			   		</div>
-			   	</li>	   	
+			   	</li>	   	 -->
 			  	</ul>
 		  	</div>
 		</aside>
@@ -113,10 +114,10 @@
 				
 				{%for works in work.all %}
 					<div class="col-md-4 text-center animate-box">
-						<a href="work-single.html" class="work" style="background-image: url({{ works.image.url }}); background-size: contain;">
+						<a href="{% url 'workIndex'  %}" class="work" style="background-image: url({{ works.image.url }}); background-size: contain;">
 							<div class="desc">
 								<h3>{{ works.summary }}</h3>
-								<span>Illustration</span>
+								<span>{{ works.address }}</span>
 							</div>
 						</a>
 					</div>
@@ -155,7 +156,7 @@
 			</div>
 		</div>
 
-		<div id="fh5co-blog" class="blog-flex">
+		<!-- <div id="fh5co-blog" class="blog-flex">
 			<div class="featured-blog" style="background-image: url(images/blog-1.jpg);">
 				<div class="desc-t">
 					<div class="desc-tc">
@@ -201,6 +202,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div><!-- END container-wrap -->
 {% endblock %}
