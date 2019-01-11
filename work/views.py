@@ -13,3 +13,4 @@ def workDetail(request, work_id):
         'work':work
     }
     return render(request, 'work/work_detail.html', context)
+
