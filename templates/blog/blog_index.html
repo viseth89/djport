@@ -29,7 +29,7 @@
                 {% for blog in blogs.all %}
                 <div class="col-md-4">
                     <div class="fh5co-blog animate-box">
-                        <a href="#" class="blog-bg" style="background-image: url({{ blog.image.url }}); background-size: contain;"></a>
+                        <a href="{% url 'blogDetail' blog.id %}" class="blog-bg" style="background-image: url({{ blog.image.url }}); background-size: contain;"></a>
                         <div class="blog-text">
                             <span class="posted_on">{{ blog.pub_date_pretty }}</span>
                             <h3><a href="#">{{ blog.title }}</a></h3>
