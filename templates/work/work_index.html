@@ -40,7 +40,7 @@
 
 				
 					<div class="col-md-4 text-center animate-box">
-						<a href="{% url 'workIndex'  %}" class="work" style="background-image: url({{ works.image.url }}); background-size: contain;">
+						<a href="{% url 'workDetail' works.id %}" class="work" style="background-image: url({{ works.image.url }}); background-size: contain;">
 							<div class="desc">
 								<h3>{{ works.summary }}</h3>
 								<span>{{ works.address }}</span>

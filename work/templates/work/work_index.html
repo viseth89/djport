@@ -29,6 +29,7 @@
                 
                 {% for works in work.all %}
                 <div class="col-md-4 text-center animate-box">
+						<a href="{% url 'workDetail' works.id %}" class="btn btn-primary btn-block">More Info</a>
                     <a href="work-single.html" class="work" style="background-image: url({{ works.image.url }});">
                         <div class="desc">
                             <h3>{{ works.summary }}</h3>
