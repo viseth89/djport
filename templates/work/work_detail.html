@@ -57,18 +57,14 @@
 						<ul>
 							<li>{{ work.highlights_1}}</li>
 							<li>{{ work.highlights_2}}</li>
-							<li>Adding dynamic web address from db (1/12/19)</li>
-							<!-- <li><a href=""><button class="btn btn-success">Go To Site</button></a> </li>
-							
-							must fix web address
-							-->
+							<li><a href="http://{{ work.address}}"><button class="btn btn-success">Go To Site</button></a> </li>
 							
 
 							<!-- <li>Maybe put web address here</li>
 								add more ifs for work highlights and images and addresses
 							<li>Look for new background image/jumbotron image</li>
-						check images make sure theyre loading
-						
+						check images make sure theyre loading,
+						https://stackoverflow.com/questions/6553284/absolute-url-in-django-template - genius to fix the http work.address for link :)
 						-->
 						</ul>
 					</div>
