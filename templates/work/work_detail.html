@@ -24,29 +24,48 @@
 			<div class="row">
 				<div class="col-md-8">
                     <a href=" {{ work.image.url }} " class="image-popup img-portfolio-detail">
-                        <img src=" {{ work.image.url }} " alt="Free HTML5 Template by FreeHTML5.co" class="img-responsive">
+                        <img src=" {{ work.image.url }} " alt="Portfolio/Work Image" class="img-responsive">
                     </a>
-                    <!-- Make this a if statement IF they're are more pictures; who likes the pun :))-->
-					<!-- <a href="images/portfolio-2.jpg" class="image-popup img-portfolio-detail">
-						<img src="" alt="Free HTML5 Template by FreeHTML5.co" class="img-responsive">
-					</a>		 -->
+                    
+					{% if work.image_1%}
+					<a href=" {{ work.image_1.url }} " class="_-popup img-portfolio-detail">
+                        <img src=" {{ work.image_1.url }} " alt="Portfolio/Work Image" class="img-responsive">
+                    </a>	
+					{% endif %}
+					{% if work.image_2%}
+					<a href=" {{ work.image_2.url }} " class="image-popup img-portfolio-detail">
+                        <img src=" {{ work.image_2.url }} " alt="Portfolio/Work Image" class="img-responsive">
+                    </a>	
+					{% endif %}
+					{% if work.image_3%}
+					<a href=" {{ work.image_3.url }} " class="image-popup img-portfolio-detail">
+                        <img src=" {{ work.image_3.url }} " alt="Portfolio/Work Image" class="img-responsive">
+                    </a>	
+					{% endif %}
 				</div>
 				<div class="col-md-4 fh5co-project-detail">
-					<h2 class="fh5co-project-title">{{ work.summary }}</h2>
-					<span class="fh5co-project-sub">Package of the year/sub info/ necessary ?</span>
+					<h2 class="fh5co-project-title">{{ work.title }}</h2>
+					<!-- <span class="fh5co-project-sub">Package of the year/sub info/ necessary ?</span> -->
 					<p>
 
-                        Will enter Dynamic Information Here
+                        {{ work.description}}
 
                     </p>
 
 					<div class="fh5co-project-service">
 						<h3>Technology Highlights</h3>
 						<ul>
-							<li>Python</li>
-							<li>Django</li>
-                            <!-- <li>Maybe put web address here</li>
-                            <li>Look for new background image/jumbotron image</li> -->
+							<li>{{ work.highlights_1}}</li>
+							<li>{{ work.highlights_2}}</li>
+							<li><a href="{{ work.address}}"><button class="btn btn-success">Go To Site</button></a> </li>
+							
+
+							<!-- <li>Maybe put web address here</li>
+								add more ifs for work highlights and images and addresses
+							<li>Look for new background image/jumbotron image</li>
+						check images make sure theyre loading
+						
+						-->
 						</ul>
 					</div>
 				</div>				
