@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Two guys & A Beer </title>
+    <link rel="stylesheet" href="{% static 'guysnbeer/css/style.css' %}">
+</head>
+<body>
+
+    need to fix main image/ audio links
+    <div id='container'>
+        <div id='audio-img'>
+            <img class = 'cover' src="" alt="">
+        </div>        
+        <!-- Bottom 2 links are tests to make sure I'm calling them correctly -->
+        <img src="{% static 'guysnbeer/images/bg.png' %}" alt="">
+        <img src="{% static 'images/me.jpg' %}" alt="">
+
+        <div id='audio-player'>
+            <div id='audio-info'>
+                <span class="artist"></span> - <span class="title"></span>
+            </div>
+            <input id="volume" type="range" min='0', max='100', value='50'>
+            <br>
+            		 <div id="buttons">
+		 <span>
+			<button id="prev"></button>
+			<button id="play"></button>
+			<button id="pause"></button>
+			<button id="stop"></button>
+			<button id="next"></button>
+			</span>
+		 </div>
+		 <div class="clearfix"></div>
+		 <div id="tracker">
+			<div id="progressBar">
+				<span id="progress"></span>
+			</div>
+			<span id="duration"></span>
+		 </div>
+		 <div class="clearfix"></div>
+            <ul id='playlist'>  
+
+                <!-- NEED TO FIX cover and song -->
+                    <li song="episode_1.1_Pilot.mp3" cover="{% static 'images/me.jpg' %}" artist="DeJuan & Jerry">Pilot Podcast</li>
+                    <li song="episode_2.mp3" cover="2beers.jpg" artist="DeJuan & Jerry">Episode 02</li>
+                    <li song="episode_3.mp3" cover="2beers.jpg" artist="DeJuan & Jerry">Episode 03</li>
+                    <li song="episode_4.mp3" cover="2beers.jpg" artist="DeJuan & Jerry">Episode 04</li>
+                    <li song="episode_5.mp3" cover="2beers.jpg" artist="DeJuan & Jerry">Episode 05</li>
+                    <li song="episode_6.mp3" cover="2beers.jpg" artist="DeJuan & Jerry">Episode 06</li>
+        <!-- 447 MB -> 330 MB-->
+            </ul>
+        </div>
+    </div>
+
+    <script src="{% static 'guysnbeer/js/jquery.js' %}"></script>
+    <script src="{% static 'guysnbeer/js/main.js' %}"></script>
+</body>
+</html>
