@@ -55,8 +55,24 @@
 					<div class="fh5co-project-service">
 						<h3>Technology Highlights</h3>
 						<ul>
-							<li>{{ work.highlights_1}}</li>
-							<li>{{ work.highlights_2}}</li>
+							<li>{{ work.highlights_1 }}</li>
+							<li>{{ work.highlights_2 }}</li>
+							{% if work.highlights_3 %}
+							<li>{{ work.highlights_3 }}</li>
+							{% endif %}
+							{% if work.highlights_4 %}
+							<li>{{ work.highlights_4 }}</li>
+							{% endif %}
+							{% if work.highlights_5 %}
+							<li>{{ work.highlights_5 }}</li>
+							{% endif %}
+							{% if work.highlights_6 %}
+							<li>{{ work.highlights_6 }}</li>
+							{% endif %}
+							{% if work.highlights_7 %}
+							<li>{{ work.highlights_7 }}</li>
+							{% endif %}
+
 							<li><a href="http://{{ work.address}}"><button class="btn btn-success">Go To Site</button></a> </li>
 							
 
