@@ -14,7 +14,7 @@ function initAudio(element){
     var artist = element.attr('artist');
 
     //Create Audio Object
-    audio = new Audio('media/' + song);
+    audio = new Audio(song);
 
     if(!audio.currentTime){
         $('#duration').html('0.00');
@@ -24,7 +24,7 @@ function initAudio(element){
     $('#audio-player .artist').text(artist);
 
     //Insert Cover
-    $('img.cover').attr('src', 'images/covers/' + cover)
+    $('img.cover').attr('src', cover)
 
     $('#playlist li').removeClass('active');
     element.addClass('active');

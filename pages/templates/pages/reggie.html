@@ -16,9 +16,6 @@
             <img class = 'cover' src="" alt="">
         </div>        
         <!-- Bottom 2 links are tests to make sure I'm calling them correctly -->
-        <img src="{% static 'guysnbeer/images/bg.png' %}" alt="">
-        <img src="{% static 'images/me.jpg' %}" alt="">
-
         <div id='audio-player'>
             <div id='audio-info'>
                 <span class="artist"></span> - <span class="title"></span>
@@ -45,12 +42,12 @@
             <ul id='playlist'>  
 
                 <!-- NEED TO FIX cover and song -->
-                    <li song="episode_1.1_Pilot.mp3" cover="{% static 'images/me.jpg' %}" artist="DeJuan & Jerry">Pilot Podcast</li>
-                    <li song="episode_2.mp3" cover="2beers.jpg" artist="DeJuan & Jerry">Episode 02</li>
-                    <li song="episode_3.mp3" cover="2beers.jpg" artist="DeJuan & Jerry">Episode 03</li>
-                    <li song="episode_4.mp3" cover="2beers.jpg" artist="DeJuan & Jerry">Episode 04</li>
-                    <li song="episode_5.mp3" cover="2beers.jpg" artist="DeJuan & Jerry">Episode 05</li>
-                    <li song="episode_6.mp3" cover="2beers.jpg" artist="DeJuan & Jerry">Episode 06</li>
+                    <li song="{% static 'guysnbeer/media/episode_1.1_Pilot.mp3' %}" cover="{% static 'guysnbeer/images/covers/2beers.jpg' %}" artist="DeJuan & Jerry">Pilot Podcast</li>
+                    <li song="{% static 'guysnbeer/media/episode_2.mp3' %}" cover="{% static 'guysnbeer/images/covers/2beers.jpg' %}" artist="DeJuan & Jerry">Episode 02</li>
+                    <li song="{% static 'guysnbeer/media/episode_3.mp3' %}" cover="{% static 'guysnbeer/images/covers/2beers.jpg' %}" artist="DeJuan & Jerry">Episode 03</li>
+                    <li song="{% static 'guysnbeer/media/episode_4.mp3' %}" cover="{% static 'guysnbeer/images/covers/2beers.jpg' %}" artist="DeJuan & Jerry">Episode 04</li>
+                    <li song="{% static 'guysnbeer/media/episode_5.mp3' %}" cover="{% static 'guysnbeer/images/covers/2beers.jpg' %}" artist="DeJuan & Jerry">Episode 05</li>
+                    <li song="{% static 'guysnbeer/media/episode_6.mp3' %}" cover="{% static 'guysnbeer/images/covers/2beers.jpg' %}" artist="DeJuan & Jerry">Episode 06</li>
         <!-- 447 MB -> 330 MB-->
             </ul>
         </div>
