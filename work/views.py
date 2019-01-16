@@ -4,7 +4,7 @@ from .models import Work
 
 
 def workIndex(request):
-    work = Work.objects
+    work = Work.objects.all().order_by('-pk')
     return render(request, 'work/work_index.html', {'work':work})
 
 def workDetail(request, work_id):

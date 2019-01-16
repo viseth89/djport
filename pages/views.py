@@ -3,7 +3,7 @@ from django.shortcuts import render
 from work.models import Work
 # Create your views here.
 def index(request):
-    work = Work.objects.all()[:3]
+    work = Work.objects.all().order_by('-pk')[:3]
 
     return render(request, 'pages/index.html', {'work':work})
 
