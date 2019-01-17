@@ -5,5 +5,6 @@ from . import views
 urlpatterns = [
     path('bootstrap4a', views.bootstrap4a, name='bootstrap4a'),
     path('bootstrap4b', views.bootstrap4b, name='bootstrap4b'),
-    path('bootstrap4c', views.bootstrap4c, name='bootstrap4c')
+    path('bootstrap4c', views.bootstrap4c, name='bootstrap4c'),
+    path('jsjq1',views.jsjq1,name='jsjq1')
 ]
