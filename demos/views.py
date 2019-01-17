@@ -5,3 +5,6 @@ def bootstrap4a(request):
 
 def bootstrap4b(request):
     return render(request, 'demos/bootstrap4b/index.html')
+
+def bootstrap4c(request):
+    return render(request, 'demos/bootstrap4c/index.html')
