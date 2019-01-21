@@ -11,5 +11,6 @@ urlpatterns = [
     path('bootstrap4d/blog', views.bootstrap4dBlog, name='bootstrap4dBlog'),
     path('bootstrap4d/contact', views.bootstrap4dContact, name='bootstrap4dContact'),
     path('bootstrap4d/services', views.bootstrap4dServices, name='bootstrap4dServices'),
+    path('bootstrap4e', views.bootstrap4e, name='bootstrap4e'),
     path('jsjq1',views.jsjq1,name='jsjq1'),
 ]

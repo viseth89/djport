@@ -24,5 +24,8 @@ def bootstrap4dContact(request):
 def bootstrap4dServices(request):
     return render(request, 'demos/bootstrap4d/services.html')
 
+def bootstrap4e(request):
+    return render(request, 'demos/bootstrap4e/index.html')
+
 def jsjq1(request):
     return render(request, 'demos/jsjq1/index.html')
