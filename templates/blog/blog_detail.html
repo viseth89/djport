@@ -2,7 +2,7 @@
 {% block title %} | Welcome {% endblock %}
 {% block content %}
 
-<div class="container">
+<div class="container-wrap">
     <div class="row">
         <!-- 
         Temporary way of showing the blog, will eliminate extra columns to find more elegant way 1/12/ - 10:54PM 
@@ -17,7 +17,9 @@
             <p>{{ blog.title }}</p>
             <p>{{ blog.pub_date_pretty }}</p>
             <p>{{ blog.body }}</p>
-            <img src="{{ blog.image.url }}" alt="">
+            <img src="{{ blog.image.url }}" class='img-responsive center-block' alt="">
+        </div>
+        <div class="col-md-3">
         </div>
     </div>
 </div>
