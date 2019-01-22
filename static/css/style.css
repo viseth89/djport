@@ -1473,4 +1473,9 @@ input[type="text"] {
   font-weight: 400;
 }
 
+.blog-detail{
+  padding: 3rem 0;
+  color:red!important;
+}
+
 /*# sourceMappingURL=style.css.map */
