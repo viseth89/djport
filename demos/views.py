@@ -51,5 +51,17 @@ def bootstrap4fSettings(request):
 def bootstrap4fUsers(request):
     return render(request, 'demos/bootstrap4f/users.html')
 
+def bootstrap4g(request):
+    return render(request, 'demos/bootstrap4g/index.html')
+
+def bootstrap4gProducts(request):
+    return render(request, 'demos/bootstrap4g/products.html')
+
+def bootstrap4gSingleProduct(request):
+    return render(request, 'demos/bootstrap4g/singleproduct.html')
+
+def bootstrap4gStore(request):
+    return render(request, 'demos/bootstrap4g/store.html')
+
 def jsjq1(request):
     return render(request, 'demos/jsjq1/index.html')

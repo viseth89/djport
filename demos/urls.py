@@ -23,5 +23,10 @@ urlpatterns = [
     path('bootstrap4f/profile', views.bootstrap4fProfile, name='bootstrap4fProfile'),
     path('bootstrap4f/settings', views.bootstrap4fSettings, name='bootstrap4fSettings'),
     path('bootstrap4f/users', views.bootstrap4fUsers, name='bootstrap4fUsers'),
+
+    path('bootstrap4g', views.bootstrap4g, name='bootstrap4g,'),
+    path('bootstrap4g/products', views.bootstrap4g, name='bootstrap4gProducts,'),
+    path('bootstrap4g/singleproduct', views.bootstrap4g, name='bootstrap4gSingleProduct,'),
+    path('bootstrap4g/store', views.bootstrap4g, name='bootstrap4gStore,'),
     path('jsjq1/settings',views.jsjq1,name='jsjq1'),
 ]
