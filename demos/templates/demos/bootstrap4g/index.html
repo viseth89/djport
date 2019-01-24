@@ -15,7 +15,7 @@
 
   <!-- font awesome -->
   <link rel="stylesheet" href="{% static 'bootstrap4g/css/all.css' %}" />
-  <title>Comfy Sloth Recording</title>
+  <title>Comfy Sloth</title>
   <style></style>
 </head>
 
@@ -30,7 +30,7 @@
       https://www.iconfinder.com/webalys
     -->
 
-      <a href="index.html" class="navbar-brand">
+      <a href="{% url 'bootstrap4g' %}" class="navbar-brand">
         <img src="{% static 'bootstrap4g/img/logo.png' %}" alt="company logo">
       </a>
       <button class="navbar-toggler" type='button' data-toggle='collapse' data-target='#myNavbar'>
@@ -39,16 +39,16 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item mx-2 nav-active">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="{% url 'bootstrap4g' %}" class="nav-link">Home</a>
           </li>
           <li class="nav-item mx-2">
-            <a href="products.html" class="nav-link">Products</a>
+            <a href="{% url 'bootstrap4gProducts' %}" class="nav-link">Products</a>
           </li>
           <li class="nav-item mx-2">
-            <a href="singleproduct.html" class="nav-link">Single Products</a>
+            <a href="{% url 'bootstrap4gSingleProduct' %}" class="nav-link">Single Products</a>
           </li>
           <li class="nav-item mx-2">
-            <a href="store.html" class="nav-link">Store</a>
+            <a href="{% url 'bootstrap4gStore' %}" class="nav-link">Store</a>
           </li>
         </ul>
       </div>
