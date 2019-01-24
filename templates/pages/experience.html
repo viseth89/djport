@@ -1,0 +1,311 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} | Welcome {% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/album.css' %}">
+
+
+<div class="container-wrap">
+    <aside id="fh5co-hero">
+        <div class="flexslider">
+            <ul class="slides">
+               <li style="background-image: url({% static 'images/img_bg_3.jpg' %})">
+                   <div class="overlay-gradient"></div>
+                   <div class="container-fluids">
+                       <div class="row">
+                           <div class="col-md-6 col-md-offset-3 slider-text slider-text-bg">
+                               <div class="slider-text-inner text-center">
+                                   <h1>My Experiences</h1>
+                                   <h5>Under Heavy Reconstruction</h5>
+                                   <h6>Posted 1/24</h6>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </li>		   	
+              </ul>
+          </div>
+    </aside>		
+    <div id="fh5co-blog">
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <a href="#" class="blog-bg img-responsive center-block" style="background-image: url({% static 'images/cts/1.jpg' %}); background-size: contain;"></a>
+                    <div class="blog-text">
+                        <h3 class="text-center">Setting Up 40 Desktops at a Time</h3>
+
+                        <ul>
+                            <li>Pxe Boot</li>
+                            <li>Add To Domain</li>
+                            <li>Windows Updates</li>
+                            <li>Driver Install</li>
+                            <li>Initial Setup, Office, Sophos, etc</li>
+                        </ul>  
+                        <ul class="stuff">
+                            <!-- <a href="" class="btn btn-primary btn-block">More Info</a> -->
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <a href="#" class="blog-bg" style="background-image: url({% static 'images/cts/2.jpg' %}); background-size: contain;"></a>
+                    <div class="blog-text">
+                        <h3 class="text-center">Adding More Desktops</h3>
+                        <ul>
+                            <li>8 Different Facilities</li>
+                            <li>300 Desktops</li>
+                            <li>120 Laptops</li>
+                            <li>10 Printers</li>
+                        </ul>
+                        <ul class="stuff">
+                            <!-- <a href="" class="btn btn-primary btn-block">More Info</a> -->
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <a href="#" class="blog-bg" style="background-image: url({% static 'images/cts/3.jpg' %}); background-size: contain;"></a>
+                    <div class="blog-text">
+                        <h3 class="text-center">Working Overtime close to midnight</h3>
+                        <ul>
+                            <li>Extremely High Priority</li>
+                            <li>Company Bought Out</li>
+                            <li>Setting Up Surface Tablets and laptos for Corporate</li>
+                            <li>Training How to Use VPN and WHY</li>
+                        </ul>
+                        <ul class="stuff">
+                            <!-- <a href="" class="btn btn-primary btn-block">More Info</a> -->
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <a href="#" class="blog-bg" style="background-image: url({% static 'images/cts/4.jpg' %}); background-size: contain;"></a>
+                    <div class="blog-text">
+                        <h3 class="text-center">Deploying in Michigan</h3>
+                        <ul>
+                            <li>Working with Buddy Alex :)</li>
+                            <li>Multiple Floor Facility</li>
+                            <li>New Hardware, old hardware to be recyled</li>
+                        </ul>
+                        <ul class="stuff">
+                            <!-- <a href="" class="btn btn-primary btn-block">More Info</a> -->
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <a href="#" class="blog-bg" style="background-image: url({% static 'images/cts/5.jpg' %}); background-size: contain;"></a>
+                    <div class="blog-text">
+                        <h3 class="text-center">Replacing Network Components</h3>
+                        <ul>
+                            <li>Cisco Meraki Replacement on-site</li>
+                        </ul>
+
+                        <ul class="stuff">
+                            <!-- <a href="" class="btn btn-primary btn-block">More Info</a> -->
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <a href="#" class="blog-bg" style="background-image: url({% static 'images/cts/6.jpg' %}); background-size: contain;"></a>
+                    <div class="blog-text">
+                        <h3 class="text-center">Office Setup</h3>
+                        <ul>
+                            <li>Triple Monitor</li>
+                            <li>U-Station Cubicle</li>
+                            <li>Tools and equipment in drawers</li>
+                        </ul>
+                        <ul class="stuff">
+                            <!-- <a href="" class="btn btn-primary btn-block">More Info</a> -->
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <a href="#" class="blog-bg" style="background-image: url({% static 'images/cts/11.jpg' %}); background-size: contain;"></a>
+                    <div class="blog-text">
+                        <h3 class="text-center">Cleanup</h3>
+                        <ul>
+                            <li>Collection of old hardware after deployment</li>
+                            <li>Old Printers, Scanners</li>
+                            <li>Monitors and peripherals no longer used after successful deployment</li>
+                        </ul>
+                        <ul class="stuff">
+                            <!-- <a href="" class="btn btn-primary btn-block">More Info</a> -->
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <a href="#" class="blog-bg" style="background-image: url({% static 'images/cts/12.jpg' %}); background-size: contain;"></a>
+                    <div class="blog-text">
+                        <h3 class="text-center">Replacing Network Components</h3>
+                        <ul>
+                            <li>Cisco Meraki Replacement on-site</li>
+                        </ul>
+
+                        <ul class="stuff">
+                            <!-- <a href="" class="btn btn-primary btn-block">More Info</a> -->
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <a href="#" class="blog-bg" style="background-image: url({% static 'images/cts/13.jpg' %}); background-size: contain;"></a>
+                    <div class="blog-text">
+                        <h3 class="text-center">Corporate Closet</h3>
+                        <ul>
+                            <li>Making Sure Backup PowerSupply Is functional</li>
+                            <li>Wire tracing with senior members</li>
+                        </ul>
+                        <ul class="stuff">
+                            <!-- <a href="" class="btn btn-primary btn-block">More Info</a> -->
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <a href="#" class="blog-bg" style="background-image: url({% static 'images/cts/14.jpg' %}); background-size: contain;"></a>
+                    <div class="blog-text">
+                        <h3 class="text-center">Network Closet</h3>
+                        <ul>
+                            <li>Able to assist with more experience members</li>
+                            <li>Replacing Patch cables</li>
+                            <li>Restarting Components</li>
+                            <li>Reporting to Level 3 Help Desk and Administrators</li>
+                        </ul>
+                        <ul class="stuff">
+                            <!-- <a href="" class="btn btn-primary btn-block">More Info</a> -->
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <a href="#" class="blog-bg" style="background-image: url({% static 'images/cts/15.jpg' %}); background-size: contain;"></a>
+                    <div class="blog-text">
+                        <h3 class="text-center">Floor Plans</h3>
+                        <ul>
+                            <li>Created with Visio</li>
+                        </ul>
+
+                        <ul class="stuff">
+                            <!-- <a href="" class="btn btn-primary btn-block">More Info</a> -->
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <a href="#" class="blog-bg" style="background-image: url({% static 'images/cts/16.jpg' %}); background-size: contain;"></a>
+                    <div class="blog-text">
+                        <h3 class="text-center">Office Setup</h3>
+                        <ul>
+                            <li>Deployment with Hussain</li>
+                            <li>Detroit</li>
+                            <li>2 Facilities</li>
+                        </ul>
+                        <ul class="stuff">
+                            <!-- <a href="" class="btn btn-primary btn-block">More Info</a> -->
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="row"></div>
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <a href="#" class="blog-bg" style="background-image: url({% static 'images/cts/7.jpg' %}); background-size: contain;"></a>
+                    <div class="blog-text">
+                        <h3 class="text-center">Raspberyy Pi</h3>
+                        <p>Raspberry Pix2  with Heatsinks and dual Fan</p>  
+                        <ul class="stuff">
+                            <!-- <a href="" class="btn btn-primary btn-block">More Info</a> -->
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <a href="#" class="blog-bg" style="background-image: url({% static 'images/cts/8.jpg' %}); background-size: contain;"></a>
+                    <div class="blog-text">
+                        <h3 class="text-center">My Fourth Custom Built Desktop </h3>
+                        <ul>
+                            <li>AMD Ryzen 3</li>
+                            <li>8 Gigs of Ram</li>
+                            <li>250 GIG SSD</li>
+                            <li>Nvidia 1060 GT</li>
+                        </ul>
+                        <ul class="stuff">
+                            <!-- <a href="" class="btn btn-primary btn-block">More Info</a> -->
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <a href="#" class="blog-bg" style="background-image: url({% static 'images/cts/9.jpg' %}); background-size: contain;"></a>
+                    <div class="blog-text">
+                        <h3 class="text-center">Home Office</h3>
+                        <ul>
+                            <li>Microsoft Ergonomic Keyboard</li>
+                            <li>Dual LG 27x 4k LG</li>
+                            <li>Dell 24" 1920x1200</li>
+                            <li>Salt Lamp x2 (ambiance)</li>
+                            <li>Led Strip light (mood lighting)</li>
+                        </ul>
+                        <ul class="stuff">
+                            <!-- <a href="" class="btn btn-primary btn-block">More Info</a> -->
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        
+        
+        </div>
+    </div>
+
+
+            </div>
+        </div>
+    </div>
+</div><!-- END container-wrap -->
+
+
+{% endblock %}

@@ -12,3 +12,6 @@ def about(request):
 
 def guysnbeer(request):
     return render(request, 'pages/reggie.html')
+
+def experience(request):
+    return render(request, 'pages/experience.html')
