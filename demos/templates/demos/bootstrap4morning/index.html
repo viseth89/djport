@@ -1,0 +1,395 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>E-Commerce</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900|Roboto:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href=" {%static 'bootstrap4morning/css/style.css' %}">
+
+
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav nav-pills justify-content-center flex-column flex-md-row text-center pt-5 main-navigation">
+        <a href="#" class="nav-item nav-link">About</a>
+        <a href="#" class="nav-item nav-link">Workshops & Conferences</a>
+        <a href="#" class="nav-item nav-link">Speakers</a>
+        <a href="#" class="nav-item nav-link">Tickets</a>
+      </nav>
+
+      <div class="row justify-content-center ">
+        <div class="col-md-8 pt-5 pt-md-0">
+          <div class="event-info">
+            <img src="{% static 'bootstrap4morning/img/logo.svg' %}" alt="Ecommerce + Web Design Conference Logo" class='img-fluid'>
+            <p class='text-center text-lg-right'>
+              <i class="fas fa-map-marker-alt"></i>
+              London - December 9th - 10th 2019</p>
+          </div>
+        </div><!-- col-md-8 -->
+        <div class="col-md-8">
+          <div class="row event-numbers text-center">
+            <div class="col-lg-4">
+              <p class="m-0 conference display-4">12 <span>Conferences</span> </p>
+            </div>
+            <div class="col-lg-4">
+              <p class="m-0 workshops display-4">04 <span>Workshops</span> </p>
+            </div>
+            <div class="col-lg-4">
+              <div class="col-lg-4">
+                <p class="m-0 days display-4">02 <span>Days</span> </p>
+              </div>
+            </div> <!-- row-->
+          </div><!-- col-md-8 -->
+        </div> <!-- row-->
+      </div>
+  </header>
+
+  <section class="about container py-7">
+    <div class="row justify-content-center">
+      <div class="col-10 text-center">
+        <h2 class='mb-3'>About The Conference</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium est beatae, cupiditate quas
+          voluptatibus maxime saepe officiis nihil optio sunt odit, commodi, magnam necessitatibus consequatur quos
+          assumenda delectus ducimus asperiores.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="conferences-list bg-gradient py-7">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="white-text">Conferences & Workshops</h2>
+          <p class="white-text mt-3">Filter By Category</p>
+        </div>
+
+        <div class="col-12">
+          <nav class="nav nav-pills nav-fill mt-3 categories">
+            <button class="nav-item nav-link btn btn-danger">All</button>
+            <button class="nav-item nav-link btn btn-primary">E-Commerce</button>
+            <button class="nav-item nav-link btn btn-warning">Wordpress</button>
+            <button class="nav-item nav-link btn btn-success">Web Design</button>
+            <button class="nav-item nav-link btn btn-info">Web Developement</button>
+          </nav>
+        </div><!-- Col-12-->
+
+        <div class="col-lg-6">
+          <div class="list-group mt-5">
+            <div class="list-group-item list-group-item-action active text-center heading">
+              Day 1 - December 9
+            </div>
+            <div class="list-group-item list-group-item-action d-flex conference-wrapper align-items-center web-design-cat">
+              <div class="image">
+                <img src="{% static 'bootstrap4morning/img/speaker_8_sq.jpg' %}" class="rounded-circle img-fluid">
+              </div>
+              <div class="conference-info">
+                <p class="mb-1 time">
+                  <span class="badge badge-primary">10:00 - 11:00</span>
+
+                  <span class="badge badge-danger">Workshop</span>
+                </p>
+                <p class="mb-1 title">SVG Animations for your Website</p>
+                <p class="mb-1 description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius excepturi
+                  modi necessitatibus maxime qui nulla.</p>
+                <p class="speaker">By: <span>Karl Miller</span></p>
+              </div><!-- Conference Info-->
+            </div><!-- List-group-item-->
+            <div class="list-group-item list-group-item-action d-flex conference-wrapper align-items-center ecommerce-cat">
+              <div class="image">
+                <img src="{% static 'bootstrap4morning/img/speaker_8_sq.jpg' %}" class="rounded-circle img-fluid">
+              </div>
+              <div class="conference-info">
+                <p class="mb-1 time">
+                  <span class="badge badge-primary">10:00 - 11:00</span>
+
+                  <span class="badge badge-danger">Workshop</span>
+                </p>
+                <p class="mb-1 title">SVG Animations for your Website</p>
+                <p class="mb-1 description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius excepturi
+                  modi necessitatibus maxime qui nulla.</p>
+                <p class="speaker">By: <span>Karl Miller</span></p>
+              </div><!-- Conference Info-->
+            </div><!-- List-group-item-->
+            <div class="list-group-item list-group-item-action d-flex conference-wrapper align-items-center wordpress-cat">
+              <div class="image">
+                <img src="{% static 'bootstrap4morning/img/speaker_8_sq.jpg' %}" class="rounded-circle img-fluid">
+              </div>
+              <div class="conference-info">
+                <p class="mb-1 time">
+                  <span class="badge badge-primary">10:00 - 11:00</span>
+
+                  <span class="badge badge-danger">Workshop</span>
+                </p>
+                <p class="mb-1 title">SVG Animations for your Website</p>
+                <p class="mb-1 description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius excepturi
+                  modi necessitatibus maxime qui nulla.</p>
+                <p class="speaker">By: <span>Karl Miller</span></p>
+              </div><!-- Conference Info-->
+            </div><!-- List-group-item-->
+            <div class="list-group-item list-group-item-action d-flex conference-wrapper align-items-center web-developement-cat">
+              <div class="image">
+                <img src="{% static 'bootstrap4morning/img/speaker_8_sq.jpg' %}" class="rounded-circle img-fluid">
+              </div>
+              <div class="conference-info">
+                <p class="mb-1 time">
+                  <span class="badge badge-primary">10:00 - 11:00</span>
+
+                  <span class="badge badge-danger">Workshop</span>
+                </p>
+                <p class="mb-1 title">SVG Animations for your Website</p>
+                <p class="mb-1 description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius excepturi
+                  modi necessitatibus maxime qui nulla.</p>
+                <p class="speaker">By: <span>Karl Miller</span></p>
+              </div><!-- Conference Info-->
+            </div><!-- List-group-item-->
+
+          </div><!-- List Group-->
+        </div><!-- Col-lg-6-->
+
+
+        <div class="col-lg-6">
+          <div class="list-group mt-5">
+            <div class="list-group-item list-group-item-action active text-center heading">
+              Day 1 - December 9
+            </div>
+            <div class="list-group-item list-group-item-action d-flex conference-wrapper align-items-center web-design-cat">
+              <div class="image">
+                <img src="{% static 'bootstrap4morning/img/speaker_8_sq.jpg' %}" class="rounded-circle img-fluid">
+              </div>
+              <div class="conference-info">
+                <p class="mb-1 time">
+                  <span class="badge badge-primary">10:00 - 11:00</span>
+
+                  <span class="badge badge-danger">Workshop</span>
+                </p>
+                <p class="mb-1 title">SVG Animations for your Website</p>
+                <p class="mb-1 description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius excepturi
+                  modi necessitatibus maxime qui nulla.</p>
+                <p class="speaker">By: <span>Karl Miller</span></p>
+              </div><!-- Conference Info-->
+            </div><!-- List-group-item-->
+            <div class="list-group-item list-group-item-action d-flex conference-wrapper align-items-center ecommerce-cat">
+              <div class="image">
+                <img src="{% static 'bootstrap4morning/img/speaker_8_sq.jpg' %}" class="rounded-circle img-fluid">
+              </div>
+              <div class="conference-info">
+                <p class="mb-1 time">
+                  <span class="badge badge-primary">10:00 - 11:00</span>
+
+                  <span class="badge badge-danger">Workshop</span>
+                </p>
+                <p class="mb-1 title">SVG Animations for your Website</p>
+                <p class="mb-1 description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius excepturi
+                  modi necessitatibus maxime qui nulla.</p>
+                <p class="speaker">By: <span>Karl Miller</span></p>
+              </div><!-- Conference Info-->
+            </div><!-- List-group-item-->
+            <div class="list-group-item list-group-item-action d-flex conference-wrapper align-items-center wordpress-cat">
+              <div class="image">
+                <img src="{% static 'bootstrap4morning/img/speaker_8_sq.jpg' %}" class="rounded-circle img-fluid">
+              </div>
+              <div class="conference-info">
+                <p class="mb-1 time">
+                  <span class="badge badge-primary">10:00 - 11:00</span>
+
+                  <span class="badge badge-danger">Workshop</span>
+                </p>
+                <p class="mb-1 title">SVG Animations for your Website</p>
+                <p class="mb-1 description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius excepturi
+                  modi necessitatibus maxime qui nulla.</p>
+                <p class="speaker">By: <span>Karl Miller</span></p>
+              </div><!-- Conference Info-->
+            </div><!-- List-group-item-->
+            <div class="list-group-item list-group-item-action d-flex conference-wrapper align-items-center web-developement-cat">
+              <div class="image">
+                <img src="{% static 'bootstrap4morning/img/speaker_8_sq.jpg' %}" class="rounded-circle img-fluid">
+              </div>
+              <div class="conference-info">
+                <p class="mb-1 time">
+                  <span class="badge badge-primary">10:00 - 11:00</span>
+
+                  <span class="badge badge-danger">Workshop</span>
+                </p>
+                <p class="mb-1 title">SVG Animations for your Website</p>
+                <p class="mb-1 description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius excepturi
+                  modi necessitatibus maxime qui nulla.</p>
+                <p class="speaker">By: <span>Karl Miller</span></p>
+              </div><!-- Conference Info-->
+            </div><!-- List-group-item-->
+
+          </div><!-- List Group-->
+        </div><!-- Col-lg-6-->
+
+
+      </div><!-- Row-->
+    </div><!-- Container -->
+  </section>
+
+  <section class="pt-5">
+    <h2 class="text-center mb-5">2018 Speakers</h2>
+    <ul class="row speaker-list list-unstyled no-gutters">
+      <li class="col-sm-6 col-lg-3">
+        <div class="speaker-image">
+          <img src="{% static 'bootstrap4morning/img/speaker_1.jpg' %}" alt="" class='img-fluid'>
+        </div>
+        <div class="text-center speaker-info py-3">
+          <h3 class="text-uppercase">
+            Speaker Name Here
+          </h3>
+          <p>Speaker Description</p>
+        </div>
+      </li>
+
+      <li class="col-sm-6 col-lg-3">
+        <div class="speaker-image">
+          <img src="{% static 'bootstrap4morning/img/speaker_1.jpg' %}" alt="" class='img-fluid'>
+        </div>
+        <div class="text-center speaker-info py-3">
+          <h3 class="text-uppercase">
+            Speaker Name Here
+          </h3>
+          <p>Speaker Description</p>
+        </div>
+      </li>
+
+      <li class="col-sm-6 col-lg-3">
+        <div class="speaker-image">
+          <img src="{% static 'bootstrap4morning/img/speaker_1.jpg' %}" alt="" class='img-fluid'>
+        </div>
+        <div class="text-center speaker-info py-3">
+          <h3 class="text-uppercase">
+            Speaker Name Here
+          </h3>
+          <p>Speaker Description</p>
+        </div>
+      </li>
+
+      <li class="col-sm-6 col-lg-3">
+        <div class="speaker-image">
+          <img src="{% static 'bootstrap4morning/img/speaker_1.jpg' %}" alt="" class='img-fluid'>
+        </div>
+        <div class="text-center speaker-info py-3">
+          <h3 class="text-uppercase">
+            Speaker Name Here
+          </h3>
+          <p>Speaker Description</p>
+        </div>
+      </li>
+
+      <li class="col-sm-6 col-lg-3">
+        <div class="speaker-image">
+          <img src="{% static 'bootstrap4morning/img/speaker_1.jpg' %}" alt="" class='img-fluid'>
+        </div>
+        <div class="text-center speaker-info py-3">
+          <h3 class="text-uppercase">
+            Speaker Name Here
+          </h3>
+          <p>Speaker Description</p>
+        </div>
+      </li>
+
+      <li class="col-sm-6 col-lg-3">
+        <div class="speaker-image">
+          <img src="{% static 'bootstrap4morning/img/speaker_1.jpg' %}" alt="" class='img-fluid'>
+        </div>
+        <div class="text-center speaker-info py-3">
+          <h3 class="text-uppercase">
+            Speaker Name Here
+          </h3>
+          <p>Speaker Description</p>
+        </div>
+      </li>
+
+      <li class="col-sm-6 col-lg-3">
+        <div class="speaker-image">
+          <img src="{% static 'bootstrap4morning/img/speaker_1.jpg' %}" alt="" class='img-fluid'>
+        </div>
+        <div class="text-center speaker-info py-3">
+          <h3 class="text-uppercase">
+            Speaker Name Here
+          </h3>
+          <p>Speaker Description</p>
+        </div>
+      </li>
+
+      <li class="col-sm-6 col-lg-3">
+        <div class="speaker-image">
+          <img src="{% static 'bootstrap4morning/img/speaker_1.jpg' %}" alt="" class='img-fluid'>
+        </div>
+        <div class="text-center speaker-info py-3">
+          <h3 class="text-uppercase">
+            Speaker Name Here
+          </h3>
+          <p>Speaker Description</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="gallery bg-gradient py-7">
+    <h2 class="white-text text-center mb-5">The Gallery</h2>
+
+    <div class="container">
+      <div class="card-columns">
+        <div class="card">
+          <div class="card-img-top">
+            <img src="{% static 'bootstrap4morning/img/gallery1.jpg' %}" alt="Image From Previous Years" class="img-thumbnail">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top">
+            <img src="{% static 'bootstrap4morning/img/gallery1.jpg' %}" alt="Image From Previous Years" class="img-thumbnail">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top">
+            <img src="{% static 'bootstrap4morning/img/gallery1.jpg' %}" alt="Image From Previous Years" class="img-thumbnail">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top">
+            <img src="{% static 'bootstrap4morning/img/gallery1.jpg' %}" alt="Image From Previous Years" class="img-thumbnail">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top">
+            <img src="{% static 'bootstrap4morning/img/gallery1.jpg' %}" alt="Image From Previous Years" class="img-thumbnail">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top">
+            <img src="{% static 'bootstrap4morning/img/gallery1.jpg' %}" alt="Image From Previous Years" class="img-thumbnail">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

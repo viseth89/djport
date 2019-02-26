@@ -29,4 +29,6 @@ urlpatterns = [
     path('bootstrap4g/singleproduct', views.bootstrap4gSingleProduct, name='bootstrap4gSingleProduct'),
     path('bootstrap4g/store', views.bootstrap4gStore, name='bootstrap4gStore'),
     path('jsjq1/settings',views.jsjq1,name='jsjq1'),
+
+    path('bootstrap4morning', views.bootstrap4morning, name='bootstrap4morning'),
 ]

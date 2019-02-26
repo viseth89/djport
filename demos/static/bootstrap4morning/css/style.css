@@ -1,0 +1,235 @@
+:root {
+
+  /*** Custom **/
+  --font-family-sans-serif: 'Poppins', sans-serif;
+  --font-family-text: 'Roboto', sans-serif;
+  --font-family-heading: var(--font-family-sans-serif);
+
+  /* Colors */
+  --blue: #22abff;
+  --green: #81bc26;
+  --yellow: #e79300;
+  --purple: #8b2a74;
+  --info: #8b2a74;
+  --black: #000000;
+  --pink: #d24068;
+  --purple2: #712363;
+  --gray-dark: #4f4f4f;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: var(--font-family-text);
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-family: var(--font-family-heading);
+  font-weight: 900;
+  color: var(--purple);
+  font-size: 2rem;
+}
+
+@media(min-width:768px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+.py-7 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.white-text {
+  color: var(--white)
+}
+
+.bg-gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d24068+0,8b2a74+100 */
+  background: #d24068;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #d24068 0%, #8b2a74 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #d24068 0%, #8b2a74 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #d24068 0%, #8b2a74 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d24068', endColorstr='#8b2a74', GradientType=0);
+  /* IE6-9 */
+}
+
+.site-header {
+  min-height: 900px;
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-navigation a {
+  color: var(--white);
+  font-size: 1.4rem;
+}
+
+.main-navigation a:hover {
+  color: var(--yellow)
+}
+
+/* Event Info */
+
+@media (min-width:768px) {
+  .event-info {
+    margin-top: 15rem;
+  }
+}
+
+.event-info p {
+  color: var(--white);
+  font-size: 1.8rem;
+}
+
+/* Event Numbers */
+
+.event-numbers {
+  color: var(--white);
+}
+
+.event-numbers .display-4 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: .7;
+  padding-bottom: 1rem;
+}
+
+.event-numbers>div {
+  margin-bottom: 2rem;
+}
+
+@media (min-width:992px) {
+  .event-numbers .display-4 {
+    font-size: 6rem;
+  }
+}
+
+.event-numbers span {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.event-numbers span::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Force each span to take its own line */
+
+.event-numbers .conference {
+  color: var(--yellow);
+}
+
+.event-numbers .workshops {
+  color: var(--blue);
+}
+
+.event-numbers .days {
+  color: var(--green);
+}
+
+/* Buttons */
+
+.categories .btn {
+  border-radius: 0!important;
+  width:100%;
+  color:black;
+  background-color: var(--white);
+  border:none;
+  font-size:1.4rem;
+  font-weight:400;
+  margin-bottom:1rem;
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+}
+
+@media (min-width:992px) {
+  .categories .btn {
+    width: auto;
+    margin-right:2rem;
+  }
+  .categories .btn:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.categories .btn-primary, 
+.ecommerce-cat{
+  border-left: 10px solid var(--blue);
+}
+.categories .btn-warning,
+.wordpress-cat {
+  border-left: 10px solid var(--yellow);
+}
+.categories .btn-success,
+.web-design-cat{
+  border-left: 10px solid var(--green);
+}
+.categories .btn-info,
+.web-developement-cat{
+  border-left: 10px solid var(--purple);
+}
+
+/* Conferences List */
+.list-group-item.active,
+.list-group-item.active:hover {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+
+.list-group-item:hover {
+  background-color: var(--white);
+}
+
+.conference-wrapper .image {
+  margin-right: 1rem;
+}
+
+.conference-info {
+  font-size:1.2rem;
+  color:var(--black);
+}
+.conference-info .badge{
+  font-size: 1rem;
+  font-weight:400;
+}
+
+.conference-info .badge-primary{
+  background-color: var(--blue);
+}
+.conference-info .title,
+.conference-info .speaker {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.conference-info .speaker span {
+  font-weight: 300;
+}
+
+/* Speakers */
+.speaker-list .speaker-image {
+  overflow:hidden;
+}
+.speaker-list img {
+  transition: transform .3s ease-out;
+}
+.speaker-list img:hover {
+  transform: scale(1.2);
+}
+.speaker-info h3{
+  color: var(--yellow);
+  font-weight: 700;
+}
+.speaker-info p {
+  font-size: 1rem;
+}

@@ -65,3 +65,6 @@ def bootstrap4gStore(request):
 
 def jsjq1(request):
     return render(request, 'demos/jsjq1/index.html')
+
+def bootstrap4morning(request):
+  return render(request, 'demos/bootstrap4morning/index.html')

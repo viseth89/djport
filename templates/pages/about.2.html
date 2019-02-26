@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} | Welcome {% endblock %}
+{% block content %}
+<div class="container-wrap">
+    <aside id="fh5co-hero">
+        <div class="flexslider">
+            <ul class="slides">
+               <li style="background-image: url({% static 'images/img_bg_3.jpg' %});">
+                   <div class="overlay-gradient"></div>
+                   <div class="container-fluids">
+                       <div class="row">
+                           <div class="col-md-6 col-md-offset-3 slider-text slider-text-bg">
+                               <div class="slider-text-inner text-center">
+                                   <h1>About</h1>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </li>		   	
+              </ul>
+          </div>
+    </aside>		
+    <div id="fh5co-about">
+        <div class="row animate-box">
+            <div class="col-md-6 col-md-offset-3 text-center heading-section">
+                <!-- <h3>Our History</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
+                <h3>Hi! I'm Viseth</h3>
+                    <p>I am a Full-Stack Developer with experience in Wordpress, Django, Express and Flask.  This is built on Django using Postgres for DB to make the site dynamic vs my older portfolio which was primarily static.</p>
+
+                    <h4>1/21-List of Todos</h4>
+
+                    <li>Re-Do Portfolio from scratch in BS4</li>
+                    <li>Add Pagination to Blog</li>
+                    <li>Add Most Recent Blog Entries to HomePage</li>
+                    <li>Find new images, make responsive for mobile</li>
+                    
+                    <strike><li>1/10CSS/Formatting Blog and General Site</li></strike>
+                    <strike><li>1/11Tweaking work index to go to work detail page as well Link to actual  Work-Site</li></strike>
+                    <strike><li>1/12 - Works Page dynamic working on formatting for blogs and works details</li></strike>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1  animate-box">
+                <p><img src="{% static 'images/portfolio-6.jpg' %}" alt="Free HTML5 Bootstrap Template" class="img-responsive"></p>
+            </div>
+            <div class="col-md-8 col-md-offset-2  animate-box">
+                <div class="about-desc">
+
+                    <h4 class='text-center'>Why Hire Me</h4>
+
+                    <ol>
+                        <li>Parallax = https://code.tutsplus.com/tutorials/a-simple-parallax-scrolling-technique--net-27641</li>
+                        <li></li>
+                        <li>Modal usage</li>
+
+                        <li>https://underscores.me/</li>
+                        <li></li>
+                        <li>Wordpress Templates</li>
+                    </ol>
+                        
+                    
+<!--                         
+                        
+                        
+                       
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- END container-wrap -->
+
+
+{% endblock %}
