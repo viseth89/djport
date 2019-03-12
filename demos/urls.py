@@ -31,4 +31,5 @@ urlpatterns = [
     path('jsjq1/settings',views.jsjq1,name='jsjq1'),
 
     path('bootstrap4morning', views.bootstrap4morning, name='bootstrap4morning'),
+    path('sass-demo', views.sassDemo, name='sassDemo'),
 ]

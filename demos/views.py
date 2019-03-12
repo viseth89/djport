@@ -68,3 +68,6 @@ def jsjq1(request):
 
 def bootstrap4morning(request):
   return render(request, 'demos/bootstrap4morning/index.html')
+
+def sassDemo(request):
+  return render(request, 'demos/sass-demo/sass.html')
