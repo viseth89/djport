@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900|Roboto:300,400,700,900" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
-<!-- Tweak -->
+  <!-- Tweak -->
 </head>
 
 <body>
@@ -81,7 +81,6 @@
               <h2>
                 <p><i> "scripts": {</i></p>
                 <p><i> "sass": "node-sass -w scss/ -o css/ --recursive"</i></p>
-                },
               </h2>
             </div>
             <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">Here we a setting the
@@ -105,7 +104,7 @@
       <h4 class='pb-5 text-center'>Tips</h4>
       <div class="row text-center">
 
-        <div class="col-md-8 offset-md-2">
+        <div class="col-md-10 offset-md-1">
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
@@ -118,29 +117,86 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" id="messages-tab" data-toggle="tab" href="#media" role="tab" aria-controls="messages"
-                aria-selected="false">media queries</a>
+                aria-selected="false">Media Queries</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="settings-tab" data-toggle="tab" href="#general" role="tab" aria-controls="settings"
-                aria-selected="false">my general structure</a>
+                aria-selected="false">My General Structure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="settings-tab" data-toggle="tab" href="#package" role="tab" aria-controls="settings"
+                aria-selected="false">My 'package.json' (reference)</a>
             </li>
           </ul>
 
           <!-- Tab panes -->
           <div class="tab-content">
             <div class="tab-pane active" id="comb" role="tabpanel" aria-labelledby="home-tab">
-              <ol>
-                <li>$secondaryColor:#f19f30;</li>
-                <li></li>
-                <li></li>
-              </ol>
+              <pre><code class="language-css">
+                // FOOTER
+
+                  footer {
+                    margin-top: 30px;
+                    padding: 30px 0;
+                    border-top: 1px solid #c1c1c1;
+                    text-align: center;
+
+                    nav ul {
+                      list-style: none;
+
+                      li {
+                        display: inline;
+
+                        // Note use of '&' 
+                        &:last-child .separator {
+                          display: none;
+                        }
+
+                        a {
+                          color: #000000;
+                          text-transform: uppercase;
+                          font-weight: bold;
+                          font-size: 16px;
+                          text-decoration: none;
+
+                        }
+                      }
+                    }
+              </code></pre>
 
             </div>
             <div class="tab-pane" id="hover" role="tabpanel" aria-labelledby="profile-tab">
               <h2>
-                <li>&:hover</li>
-                <li>Simplified way of adding hover effect</li>
+                & and hover
               </h2>
+              <pre><code class="language-css">
+                .sidebar .widget {
+                  margin-bottom: 20px;
+                
+                  h3 {
+                    font-weight: 700;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                  }
+                
+                  ul {
+                    list-style: none;
+                
+                    li {
+                      margin-bottom: 20px;
+                
+                      a {
+                        color: #000;
+                        text-decoration: none;
+                
+                        &:hover {
+                          color: $secondaryColor;
+                        }
+                      }
+                    }
+                  }
+                }
+              </code></pre>
             </div>
             <div class="tab-pane" id="media" role="tabpanel" aria-labelledby="messages-tab">
               <h4>Another Look at Media Quieries </h4>
@@ -168,42 +224,62 @@
               </code></pre>
 
             </div>
-            <div class="tab-pane" id="general" role="tabpanel" aria-labelledby="settings-tab">My Structure
+            <div class="tab-pane" id="general" role="tabpanel" aria-labelledby="settings-tab">
 
               <pre><code class="language-css">
-                      // Front Page
+                  // Front Page
 
-.home {
-  div.hero {
-    height: 650px;
-  }
-
-  @media only screen and (min-width:768px) {
-    .main-content {
-      margin-top: 0;
-      padding: 0;
-    }
-
-    .hero-text {
-      width: 50%;
-    }
-
-  }
-
-  @media only screen and (min-width:992px) {
-    .hero-text {
-      width: 40%;
-    }
-  }
-
-  .hero-text {
-    line-height: 40px;
-    font-size: 18px;
-  }
-}
+                  .home {
+                    div.hero {
+                      height: 650px;
+                    }
+                  
+                    .hero-text {
+                      line-height: 40px;
+                      font-size: 18px;
+                    }
+                  
+                    @media only screen and (min-width:768px) {
+                      .main-content {
+                        margin-top: 0;
+                        padding: 0;
+                      }
+                  
+                      .hero-text {
+                        width: 50%;
+                      }
+                  
+                    }
+                  
+                    @media only screen and (min-width:992px) {
+                      .hero-text {
+                        width: 40%;
+                      }
+                    }
+                  }
                     </code></pre>
 
 
+            </div>
+
+            <div class="tab-pane" id="package" role="tabpanel" aria-labelledby="profile-tab">
+              <pre><code class="language-css">
+                    {
+                      "name": "lapizzeria",
+                      "version": "1.0.0",
+                      "description": "",
+                      "main": "index.js",
+                      "scripts": {
+                        "sass": "node-sass -w scss/ -o ./ --recursive"
+                      },
+                      "author": "",
+                      "license": "ISC",
+                      "dependencies": {
+                        "node-sass": "^4.11.0"
+                      }
+                    }
+                    
+                  </code></pre>
             </div>
           </div>
         </div>
