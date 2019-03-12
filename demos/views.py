@@ -70,4 +70,4 @@ def bootstrap4morning(request):
   return render(request, 'demos/bootstrap4morning/index.html')
 
 def sassDemo(request):
-  return render(request, 'demos/sass-demo/sass.html')
+  return render(request, 'demos/sass-demo/index.html')
