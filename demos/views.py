@@ -71,3 +71,6 @@ def bootstrap4morning(request):
 
 def sassDemo(request):
   return render(request, 'demos/sass-demo/index.html')
+
+def jpbootstrap2(request):
+  return render(request, 'demos/jpbootstrap2/index.html')

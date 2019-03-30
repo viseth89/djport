@@ -1,0 +1,214 @@
+{%load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Online Store</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="{%static 'jpbootstrap2/css/style.css' %}">
+</head>
+
+<body>
+  <header class="header pt-4">
+    <h1 class="title text-center my-4">Furniture
+      <span>Store</span>
+    </h1>
+
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="false"
+        aria-label='Toggle navigation'>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="main-nav" class="collapse navbar-collapse">
+        <!-- flex-md-row - will turn into a row when screen size is md or larger -->
+        <!-- default will be flex-column, important for small sizes and responsive -->
+        <nav class="nav container justify-content-between flex-column text-center flex-md-row">
+          <a href="#" class='nav-link'>Home</a>
+          <a href="#" class='nav-link'>About</a>
+          <a href="#" class='nav-link'>Store</a>
+          <a href="#" class='nav-link'>Blog</a>
+          <a href="#" class='nav-link'>Gallery</a>
+          <a href="#" class='nav-link'>Contact Us</a>
+        </nav>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Start of Product Categories -->
+  <div class="main-image bg-image container-fluid"></div>
+  <div class="categories container pt-4">
+    <h2 class="text-center title">Product Categories</h2>
+    <div class="row mt-4 justify-content-center">
+      <!-- Note how we're using col-8 vs col-sm-8, spacing isssues -->
+      <div class="col-8 col-md-4 mb-3">
+        <img src="{% static 'jpbootstrap2/img/category1.jp' %}g" alt="" class='img-fluid'>
+        <!-- d-block = change anchor from inline to block -->
+        <a href="#" class='text-center mt-4 d-block'>Office</a>
+      </div>
+      <div class="col-8 col-md-4 mb-3">
+        <img src="{% static 'jpbootstrap2/img/category2.jp' %}g" alt="" class='img-fluid'>
+        <!-- d-block = change anchor from inline to block -->
+        <a href="#" class='text-center mt-4 d-block'>Home</a>
+      </div>
+      <div class="col-8 col-md-4 mb-3">
+        <img src="{% static 'jpbootstrap2/img/category3.jp' %}g" alt="" class='img-fluid'>
+        <!-- d-block = change anchor from inline to block -->
+        <a href="#" class='text-center mt-4 d-block'>Kitchen</a>
+      </div>
+    </div>
+  </div>
+  <!-- End of of Product Categories -->
+  
+  
+  <!-- Start of About Us -->
+  <div class="container-fluid bg-primary mt-5 about-us">
+    <!-- Align items vertically -->
+    <div class="row h-100 align-items-center">
+      <div class="col-md-6 about-us-image bg-image">
+        <!-- Background Image Loaded in CSS -->
+      </div>
+      <div class="col-md-6 text-light">
+<div class="py-5"> <!-- Created to give additional spacing to content for responsive design -->
+  <h2 class="title display-4">About Us</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis quae odit eum enim officia minus voluptate, dolore quam, veritatis veniam animi ratione quisquam optio dignissimos eveniet? At sunt commodi, expedita placeat nulla, esse iste ratione doloremque quam alias quisquam eum! Officiis, soluta! Suscipit impedit quis, modi quasi dignissimos nulla?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores explicabo quis quia officia suscipit laudantium, voluptas hic aliquam nulla optio.</p>
+</div>
+      </div>
+    </div>
+  </div>
+  <!-- End of About Us -->
+
+<!-- Start of Our Products -->
+  <div class="container mt-4">
+    <h2 class="text-center title">Our Products</h2>
+    
+    <!-- Vertically Align Items in div 'align-items-center' -->
+    <!-- 'no gutters' removes extra padding on side -->
+    <div class="row no-gutters mt-4 bg-primary align-items-center">
+      <div class="col-lg-8">
+        <img src="{% static 'jpbootstrap2/img/product1.jpg' %}" class="img-fluid" alt="Product Image #1">
+      </div>
+      <div class="col-lg-4">
+        <div class="product-info text-light text-center p-4">
+          <h3 class="text-center mb-3">Product 1</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam sint deleniti delectus perspiciatis ullam ab.</p>
+          <p class="price font-weight-bold">$1,000.00</p>
+          <a href="#" class="btn btn-success d-block btn-lg">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-6 mb-4">
+        <img src="{% static 'jpbootstrap2/img/product2.jpg' %}" alt="Product Image #2" class="img-fluid">
+        <div class="product-info text-light text-center p-4 bg-primary">
+            <h3 class="text-center mb-3">Product 2</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam sint deleniti delectus perspiciatis ullam ab.</p>
+            <p class="price font-weight-bold">$1,000.00</p>
+            <a href="#" class="btn btn-success d-block btn-lg">Add to Cart</a>
+          </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <img src="{% static 'jpbootstrap2/img/product3.jpg' %}" alt="Product Image #2" class="img-fluid">
+        <div class="product-info text-light text-center p-4 bg-primary">
+            <h3 class="text-center mb-3">Product 3</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam sint deleniti delectus perspiciatis ullam ab.</p>
+            <p class="price font-weight-bold">$1,000.00</p>
+            <a href="#" class="btn btn-success d-block btn-lg">Add to Cart</a>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="row mt-4 justify-content-center">
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <img src="{% static 'jpbootstrap2/img/product4.jpg' %}" alt="Product Image #4" class="img-fluid">
+            <div class="product-info text-light text-center p-4 bg-primary">
+                <h3 class="text-center mb-3">Product 4</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam sint deleniti delectus perspiciatis ullam ab.</p>
+                <p class="price font-weight-bold">$1,000.00</p>
+                <a href="#" class="btn btn-success d-block btn-lg">Add to Cart</a>
+              </div>
+          </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+            <img src="{% static 'jpbootstrap2/img/product5.jpg' %}" alt="Product Image #5" class="img-fluid">
+            <div class="product-info text-light text-center p-4 bg-primary">
+                <h3 class="text-center mb-3">Product 5</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam sint deleniti delectus perspiciatis ullam ab.</p>
+                <p class="price font-weight-bold">$1,000.00</p>
+                <a href="#" class="btn btn-success d-block btn-lg">Add to Cart</a>
+              </div>
+          </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+            <img src="{% static 'jpbootstrap2/img/product6.jpg' %}" alt="Product Image #6" class="img-fluid">
+            <div class="product-info text-light text-center p-4 bg-primary">
+                <h3 class="text-center mb-3">Product 6</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam sint deleniti delectus perspiciatis ullam ab.</p>
+                <p class="price font-weight-bold">$1,000.00</p>
+                <a href="#" class="btn btn-success d-block btn-lg">Add to Cart</a>
+              </div>
+          </div>
+    </div>
+
+  </div>
+<!-- End of Our Products -->
+
+
+<!-- Start of Footer -->
+<footer class="footer mt-4">
+  <div class="container mt-4 py-4">
+    <div class="row justify-content-center text-center text-md-left">
+      <div class="col-md-4 mt-4 md-0">
+        <h3 class="title">Categories</h3>
+        <nav class="footer-menu">
+          <a href="#" class="nav-link">Kitchen</a>
+          <a href="#" class="nav-link">Office</a>
+          <a href="#" class="nav-link">Garden</a>
+          <a href="#" class="nav-link">Garage</a>
+          <a href="#" class="nav-link">Bedroom</a>
+        </nav>
+      </div>
+
+      <div class="col-md-4 mt-4 md-0">
+        <h3 class="title">About Us</h3>
+        <nav class="footer-menu">
+          <a href="#" class="nav-link">Our History</a>
+          <a href="#" class="nav-link">Mission, Vision & Values</a>
+          <a href="#" class="nav-link">Careers</a>
+          <a href="#" class="nav-link">Privacy Policy</a>
+          <a href="#" class="nav-link">Terms of Service</a>
+
+        </nav>
+      </div>
+
+      <div class="col-md-4 mt-4 md-0">
+        <h3 class="title">Support</h3>
+        <nav class="footer-menu">
+          <a href="#" class="nav-link">FAQ</a>
+          <a href="#" class="nav-link">Online Help</a>
+          <a href="#" class="nav-link">Trust & Security</a>
+          <a href="#" class="nav-link">Garage</a>
+          <a href="#" class="nav-link">Bedroom</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <p class="d-block w-100 text-center">
+    All Rightst Reserved. Furniture Store 2019 &copy;
+  </p>
+</footer>
+<!-- End of Footer -->
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>

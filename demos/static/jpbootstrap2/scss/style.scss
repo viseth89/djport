@@ -1,0 +1,93 @@
+$primaryFont: 'Playfair Display',
+serif;
+$secondaryFont: 'Raleway',
+sans-serif;
+$primary-color: #037bc0;
+$secondary-color: #8cbc00;
+$third-color: #e1e1e1;
+
+.bg-primary {
+  background-color: $primary-color !important;
+}
+
+h2 {
+  font-size: 3rem !important;
+}
+
+.title {
+  font-family: $primaryFont;
+
+  span {
+    color: $primary-color;
+  }
+}
+
+.navbar {
+  border-top: 1px solid $third-color;
+  border-bottom: 1px solid $third-color;
+}
+
+.nav-link {
+  color: black;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+// Bg Images
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-image {
+  // background:url('../img/main.jpg') center/cover fixed no-repeat;
+  // SHORTHAND WAY -> breaking it up to be more concise
+  background-image: url(../img/main.jpg);
+  height: 35rem;
+
+}
+
+// Categories
+.categories a {
+  color: black;
+  font-size: 2rem;
+  font-family: $secondaryFont;
+  font-weight: 400;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// About Us
+.about-us-image {
+  background-image: url('../img/aboutus.jpg');
+  min-height: 35rem;
+}
+
+// Products
+
+.product-info {
+  .price {
+    font-size: 1.8rem;
+
+  }
+  .btn-success {
+    background-color: $secondary-color!important;
+    border-color: $secondary-color!important;
+    text-transform: uppercase!important;
+  }
+}
+
+// Footer
+.footer {
+  border-top: 1px solid $third-color;
+}
+
+.footer-menu .nav-link{
+  color:#666!important;
+}
