@@ -1,0 +1,185 @@
+$primary-color: #71b100;
+$secondary-color: #e08709;
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
+
+.bg-success {
+  background-color: $primary-color !important;
+}
+
+// Make navigation responsive/transparent
+
+@media (min-width: 768px) {
+  .top-bar.bg-success {
+    background-color: transparent !important;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .header .top-bar {
+    position: absolute;
+    z-index: 100;
+  }
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 300;
+
+  span {
+    font-weight: 900;
+  }
+}
+
+.navbar-nav .nav-link {
+  text-transform: uppercase;
+  color: #ffffff !important;
+  font-size: .8rem;
+}
+
+// Dropdown navigation
+.dropdown-menu {
+  background-color: $primary-color;
+
+  .dropdown-item {
+    color: #fff;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+}
+
+// Info Block inside Slider
+
+.carousel-caption {
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+
+.btn-warning {
+  background-color: $secondary-color;
+  color: #ffffff;
+  font-weight: 700;
+  border-color: $secondary-color;
+}
+
+
+.info-block {
+  .price {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+
+.about-us h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+// Properties
+
+.properties {
+  .card {
+    margin-bottom: 2rem;
+  }
+  .card-price {
+    font-size:1.1rem;
+    color:$primary-color;
+  }
+  .card-description img{
+    margin-right: .5rem;
+  }
+}
+
+// Find Your House
+.find-your-house{
+  background-image:url('../img/contact.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .row {
+    height:25rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+    font-weight: 900;
+  }
+}
+
+// Blog
+.entry {
+  h3::after{
+    content:'';
+    display:block;
+    width:8rem;
+    height: .2rem;
+    background-color:$primary-color;
+    margin-top: .5rem;
+  }
+  .meta span {
+    color:$secondary-color;
+  }
+  .btn-success {
+    background-color:$primary-color;
+    font-weight:700;
+    &:hover {
+      background-color:#609602;
+    }
+  }
+}
+
+// Testimonials
+.testimonials {
+  background-color:$primary-color;
+  .carousel-item {
+    padding-left: 2rem;
+  }
+
+  .testimonial-text {
+    position: relative;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    font-weight: 300;
+  }
+
+  .testimonial-text::before{
+    content: open-quote;
+    font-size: 4rem;
+    position: absolute;
+    left:-2rem;
+    top:1rem;
+    font-weight:900;
+  }
+
+  span {
+    font-size: 1.4rem;
+    font-weight: 900;
+  }
+}
+
+// Footer
+.footer.bg-dark {
+  background-color:#333!important;
+}
+
+.footer .nav-link{
+  color:#fff;
+  text-transform:uppercase;
+}

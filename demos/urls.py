@@ -33,5 +33,6 @@ urlpatterns = [
     path('bootstrap4morning', views.bootstrap4morning, name='bootstrap4morning'),
 
     path('jpbootstrap2', views.jpbootstrap2, name='jpbootstrap2'),
+    path('jpbootstrap3', views.jpbootstrap3, name='jpbootstrap3'),
     path('sassDemo', views.sassDemo, name='sassDemo'),
 ]

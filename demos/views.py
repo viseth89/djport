@@ -74,3 +74,6 @@ def sassDemo(request):
 
 def jpbootstrap2(request):
   return render(request, 'demos/jpbootstrap2/index.html')
+  
+def jpbootstrap3(request):
+  return render(request, 'demos/jpbootstrap3/index.html')

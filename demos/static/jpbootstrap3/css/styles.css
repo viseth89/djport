@@ -1,0 +1,121 @@
+body {
+  font-family: 'Lato', sans-serif; }
+
+h1,
+h2,
+h3 {
+  font-weight: 300; }
+
+.bg-success {
+  background-color: #71b100 !important; }
+
+@media (min-width: 768px) {
+  .top-bar.bg-success {
+    background-color: transparent !important; }
+  .header {
+    position: relative; }
+  .header .top-bar {
+    position: absolute;
+    z-index: 100; } }
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 300; }
+  .navbar-brand span {
+    font-weight: 900; }
+
+.navbar-nav .nav-link {
+  text-transform: uppercase;
+  color: #ffffff !important;
+  font-size: .8rem; }
+
+.dropdown-menu {
+  background-color: #71b100; }
+  .dropdown-menu .dropdown-item {
+    color: #fff;
+    text-transform: uppercase; }
+    .dropdown-menu .dropdown-item:hover {
+      background-color: #e08709; }
+
+.carousel-caption h3 {
+  font-size: 2.4rem; }
+
+.btn-warning {
+  background-color: #e08709;
+  color: #ffffff;
+  font-weight: 700;
+  border-color: #e08709; }
+
+.info-block .price {
+  font-size: 1.4rem; }
+
+.info-block h4 {
+  font-size: 1.2rem; }
+
+.about-us h3 {
+  font-size: 1rem;
+  font-weight: 700; }
+
+.properties .card {
+  margin-bottom: 2rem; }
+
+.properties .card-price {
+  font-size: 1.1rem;
+  color: #71b100; }
+
+.properties .card-description img {
+  margin-right: .5rem; }
+
+.find-your-house {
+  background-image: url("../img/contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .find-your-house .row {
+    height: 25rem; }
+  .find-your-house h3 {
+    font-size: 2.2rem;
+    font-weight: 900; }
+
+.entry h3::after {
+  content: '';
+  display: block;
+  width: 8rem;
+  height: .2rem;
+  background-color: #71b100;
+  margin-top: .5rem; }
+
+.entry .meta span {
+  color: #e08709; }
+
+.entry .btn-success {
+  background-color: #71b100;
+  font-weight: 700; }
+  .entry .btn-success:hover {
+    background-color: #609602; }
+
+.testimonials {
+  background-color: #71b100; }
+  .testimonials .carousel-item {
+    padding-left: 2rem; }
+  .testimonials .testimonial-text {
+    position: relative;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    font-weight: 300; }
+  .testimonials .testimonial-text::before {
+    content: open-quote;
+    font-size: 4rem;
+    position: absolute;
+    left: -2rem;
+    top: 1rem;
+    font-weight: 900; }
+  .testimonials span {
+    font-size: 1.4rem;
+    font-weight: 900; }
+
+.footer.bg-dark {
+  background-color: #333 !important; }
+
+.footer .nav-link {
+  color: #fff;
+  text-transform: uppercase; }
