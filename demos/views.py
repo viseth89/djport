@@ -77,3 +77,7 @@ def jpbootstrap2(request):
   
 def jpbootstrap3(request):
   return render(request, 'demos/jpbootstrap3/index.html')
+  
+  
+def ccbootstrap4(request):
+  return render(request, 'demos/ccbootstrap4/index.html')

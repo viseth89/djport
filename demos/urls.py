@@ -34,5 +34,8 @@ urlpatterns = [
 
     path('jpbootstrap2', views.jpbootstrap2, name='jpbootstrap2'),
     path('jpbootstrap3', views.jpbootstrap3, name='jpbootstrap3'),
+
+    path('ccbootstrap4', views.ccbootstrap4, name='ccbootstrap4'),
+
     path('sassDemo', views.sassDemo, name='sassDemo'),
 ]
