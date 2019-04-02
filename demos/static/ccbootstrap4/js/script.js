@@ -19,6 +19,7 @@ $(document).ready(function() {
   });
 
   // Author selectors / #54 
+  // changing to static
   $('.writers-accordion').click(function(event) {
     if(event.target.id.split('-')[0] === 'button') {
       $('#book-1').attr('src', '/static/ccbootstrap4/img/writers/' + 
