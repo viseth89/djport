@@ -4,8 +4,21 @@ from django.db import models
 class Blog(models.Model):
   title = models.CharField(max_length=255)
   pub_date = models.DateTimeField()
-  body = models.TextField()
-  image = models.ImageField(upload_to='images/')
+  title = models.CharField(max_length=75, null=True)
+  body = models.TextField(null=True)
+  image = models.ImageField(upload_to='images/', blank=True)
+  title1 = models.CharField(max_length=75, null=True, blank=True)
+  body1 = models.TextField( null=True, blank=True)
+  image1 = models.ImageField(upload_to='images/',  null=True, blank=True)
+  title2 = models.CharField(max_length=75, null=True, blank=True)
+  body2 = models.TextField(null=True, blank=True)
+  image2 = models.ImageField(upload_to='images/', null=True, blank=True)
+  title3 = models.CharField(max_length=75, null=True, blank=True)
+  body3 = models.TextField(null=True, blank=True)
+  image3 = models.ImageField(upload_to='images/', null=True, blank=True)
+  title4 = models.CharField(max_length=75, null=True, blank=True)
+  body4 = models.TextField(null=True, blank=True)
+  image4 = models.ImageField(upload_to='images/', null=True, blank=True)
   
 
   # Return titles in admin panel
