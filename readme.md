@@ -9,3 +9,4 @@
 - Cloudfront
 - Create Templates
 - Create Backups of DB's
+- Decide between apache and or nginx
